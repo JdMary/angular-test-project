@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstproject';
+  name = "bonj";
+  f()
+  {
+    alert("hello mary");
+  }
 }

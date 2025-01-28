@@ -1,1 +1,7 @@
-<p>residences works!</p>
+<ul>
+  <li *ngFor="let r of listResidences">
+    {{r.id}} - {{r.status}}
+    <button *ngIf="r.status == 'Disponible'" >show location</button>
+  </li>
+</ul>
+<!--ngmif et for directivestructure et ngmodel est une directive attribut-->

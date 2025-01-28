@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { TestComponent } from './test/test.component';
 import { MariemjradComponent } from './mariemjrad/mariemjrad.component';
 import { ResidencesComponent } from './residences/residences.component';
+import {FormsModule} from "@angular/forms";
+//au dessus ce sont les appels des classesou se trouve les imports (dir node modules)
 
 @NgModule({
   declarations: [
@@ -14,9 +16,11 @@ import { ResidencesComponent } from './residences/residences.component';
     MariemjradComponent,
     ResidencesComponent
   ],
+  //liste d'import explicite
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

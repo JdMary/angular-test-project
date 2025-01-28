@@ -1,2 +1,15 @@
 <app-residences><app-mariemjrad></app-mariemjrad></app-residences>
 <p>residence works</p>
+<!--type de data binfing:interpolation-->
+{{title}}<br>
+<button (click)="f()">click me</button>
+<br>
+<!---value avec crochet a un sesns dont le compiltteur pense que cest  une expression doit etre trouvéé dans ts []signifie proprite du composant -->
+<!---name est unepropriete  du composant dans le quel elle travaille-->
+<!--this is proprety binding du ts vers html-->
+<input [value]="name"> {{name}}
+<!--ng MoDEL est une directive
+c'est une classe qui fait un un traitement dans html-->
+<!--ici cest la combianion netre proprety et evznt binding -->
+<input [(ngModel)]="name"> {{name}}
+
