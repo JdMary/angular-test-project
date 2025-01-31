@@ -17,6 +17,8 @@ export class ResidencesComponent {
       "address":"Rades","image":"../../assets/images/R3.jpg", status:
         "Vendu"},
     {id:4,"name": "El Anber","address":"inconnu",
+      "image":"../../assets/images/R4.jpg", status: "En Construction"},
+    {id:4,"name": "El Anber","address":"inconnu",
       "image":"../../assets/images/R4.jpg", status: "En Construction"}
   ];
 
