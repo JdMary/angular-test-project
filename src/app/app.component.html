@@ -1,13 +1,23 @@
-<app-residences><app-mariemjrad></app-mariemjrad></app-residences>
+<app-residences>
+  <app-mariemjrad></app-mariemjrad>
+</app-residences>
+
 <p>residence works</p>
-<!--type de data binfing:interpolation-->
-{{title}}<br>
+<!--type de data binding:interpolation-->
+{{title}}
+<br>
+<!--this is event binding from html to ts component-->
 <button (click)="f()">click me</button>
 <br>
-<!---value avec crochet a un sesns dont le compiltteur pense que cest  une expression doit etre trouvéé dans ts []signifie proprite du composant -->
-<!---name est unepropriete  du composant dans le quel elle travaille-->
+<!---value avec crochet a un sens dont le compilateur pense que cest  une expression qui doit etre trouvée dans .ts [] signifie propriete du composant -->
+<!---name est une propriete  du composant dans le quel elle travaille-->
 <!--this is proprety binding du ts vers html-->
-<input [value]="name"> {{name}}
+<input [value]="name">
+
+<!--type de data binding:interpolation-->
+
+{{name}}
+<br>
 <!--ng MoDEL est une directive
 c'est une classe qui fait un un traitement dans html-->
 <!--ici cest la combianion netre proprety et evznt binding -->

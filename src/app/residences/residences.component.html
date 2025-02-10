@@ -1,7 +1,15 @@
 <ul>
   <li *ngFor="let r of listResidences">
     {{r.id}} - {{r.status}}
-    <button *ngIf="r.status == 'Disponible'" >show location</button>
+    <button *ngIf="r.status == 'Disponible'" (click)="showLocation(r)">show location</button>
+
+  <p *ngIf="r.status === 'Disponible'" style="color: green;">✔ Disponible</p>
+  <p *ngIf="r.status === 'Vendu'" style="color: red;">❌ Vendu</p>
+  <p *ngIf="r.status === 'En Construction'" style="color: orange;">🚧 En Construction</p>
+
+  <!-- Bouton "Like" -->
+  <button (click)="addToFavorites(r)">❤️ Like</button>
   </li>
 </ul>
 <!--ngmif et for directivestructure et ngmodel est une directive attribut-->
+

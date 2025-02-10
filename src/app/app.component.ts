@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firstproject';
-  name = "bonj";
+  name = "bonjour";
   f()
   {
-    alert("hello mary");
+    alert("hello mary = this is data binding proprety --> Ineterpolation");
   }
 }
