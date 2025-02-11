@@ -1,25 +1,32 @@
-<app-residences>
-  <app-mariemjrad></app-mariemjrad>
-</app-residences>
 
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+
+<!--<app-residences>
+  <app-mariemjrad></app-mariemjrad>
+</app-residences>-->
+<!--
 <p>residence works</p>
-<!--type de data binding:interpolation-->
+&lt;!&ndash;type de data binding:interpolation&ndash;&gt;
 {{title}}
 <br>
-<!--this is event binding from html to ts component-->
+&lt;!&ndash;this is event binding from html to ts component&ndash;&gt;
 <button (click)="f()">click me</button>
 <br>
-<!---value avec crochet a un sens dont le compilateur pense que cest  une expression qui doit etre trouvée dans .ts [] signifie propriete du composant -->
-<!---name est une propriete  du composant dans le quel elle travaille-->
-<!--this is proprety binding du ts vers html-->
+&lt;!&ndash;-value avec crochet a un sens dont le compilateur pense que cest  une expression qui doit etre trouvée dans .ts [] signifie propriete du composant &ndash;&gt;
+&lt;!&ndash;-name est une propriete  du composant dans le quel elle travaille&ndash;&gt;
+&lt;!&ndash;this is proprety binding du ts vers html&ndash;&gt;
 <input [value]="name">
 
-<!--type de data binding:interpolation-->
+&lt;!&ndash;type de data binding:interpolation&ndash;&gt;
 
 {{name}}
 <br>
-<!--ng MoDEL est une directive
-c'est une classe qui fait un un traitement dans html-->
-<!--ici cest la combianion netre proprety et evznt binding -->
+&lt;!&ndash;ng MoDEL est une directive
+c'est une classe qui fait un un traitement dans html&ndash;&gt;
+&lt;!&ndash;ici cest la combianion netre proprety et evznt binding &ndash;&gt;
 <input [(ngModel)]="name"> {{name}}
+-->
 

@@ -30,7 +30,7 @@
     <span *ngIf="r.status == 'Vendu' " [style.color]="getColor(r.status)">Vendu ❌</span>
 
 
-
+    <button [routerLink]="['/details',r.id]">details</button>
     <button (click)="getLocation(r)">Show location</button>
 
     <button (click)="addToFavorites(r)">Add To Favoris</button>
