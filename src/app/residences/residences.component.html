@@ -1,15 +1,48 @@
-<ul>
+<!--<ul>
   <li *ngFor="let r of listResidences">
     {{r.id}} - {{r.status}}
     <button *ngIf="r.status == 'Disponible'" (click)="showLocation(r)">show location</button>
 
-  <p *ngIf="r.status === 'Disponible'" style="color: green;">✔ Disponible</p>
-  <p *ngIf="r.status === 'Vendu'" style="color: red;">❌ Vendu</p>
-  <p *ngIf="r.status === 'En Construction'" style="color: orange;">🚧 En Construction</p>
+  <p *ngIf="r.status === 'Disponible'" style="color: green;"> Disponible</p>
+  <p *ngIf="r.status === 'Vendu'" style="color: red;"> Vendu</p>
+  <p *ngIf="r.status === 'En Construction'" style="color: orange;"> En Construction</p>
 
-  <!-- Bouton "Like" -->
-  <button (click)="addToFavorites(r)">❤️ Like</button>
+  &lt;!&ndash; Bouton "Like" &ndash;&gt;
+  <button (click)="addToFavorites(r)">❤️ Like </button>
   </li>
-</ul>
+</ul>-->
 <!--ngmif et for directivestructure et ngmodel est une directive attribut-->
 
+<input [(ngModel)]="address">
+
+<div *ngFor="let r of listResidences">
+
+  <div *ngIf="r.address.toLowerCase().includes(address.toLowerCase())">
+
+    {{r.id }} - {{ r.name }}
+
+
+
+    <span *ngIf="r.status == 'Disponible'" [style.color]="getColor(r.status)">Disponible ✅</span>
+
+    <span *ngIf="r.status == 'En Construction' " [style.color]="getColor(r.status)">En Construction 🚧</span>
+
+    <span *ngIf="r.status == 'Vendu' " [style.color]="getColor(r.status)">Vendu ❌</span>
+
+
+
+    <button (click)="getLocation(r)">Show location</button>
+
+    <button (click)="addToFavorites(r)">Add To Favoris</button>
+
+     <div *ngIf="showAdress && id==r.id"> {{r.address}} </div>
+
+  </div>
+
+</div>
+<h3>Favorites</h3>
+<div *ngFor="let r of favorites">
+
+  {{r.id}}
+  {{r.name}}
+</div>

@@ -16,7 +16,7 @@ import {FormsModule} from "@angular/forms";
     MariemjradComponent,
     ResidencesComponent
   ],
-  //liste d'import explicite
+  //liste de packages used in this module by component d'import explicite
   imports: [
     BrowserModule,
     AppRoutingModule,
